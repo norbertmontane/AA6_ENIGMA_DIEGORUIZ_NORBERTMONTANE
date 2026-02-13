@@ -9,7 +9,7 @@ int main() {
     Enigma enigma;
 
     if (!enigma.loadRotors()) {
-        cout << "[ERROR] No se pudieron cargar los rotors." << endl;
+        cout << "ERROR No se pudieron cargar los rotors." << endl;
         return 1;
     }
 

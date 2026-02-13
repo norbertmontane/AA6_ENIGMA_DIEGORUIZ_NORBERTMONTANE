@@ -1,2 +1,6 @@
-﻿  main.cpp
-  AA6_ENIGMA.vcxproj -> C:\Users\diego\source\repos\AA6_ENIGMA\x64\Debug\AA6_ENIGMA.exe
+﻿  enigma.cpp
+  main.cpp
+  rotor.cpp
+C:\Users\NorbertMontaneBonet\Documents\GitHub\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\AA6_ENIGMA\rotor.cpp(65,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  AA6_ENIGMA.vcxproj -> C:\Users\NorbertMontaneBonet\Documents\GitHub\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\x64\Debug\AA6_ENIGMA.exe

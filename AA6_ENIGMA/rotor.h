@@ -11,17 +11,17 @@ private:
 
 public:
     Rotor();
-    bool loadFromFile(const std::string& filename);
-    bool saveToFile(const std::string& filename);
+    bool cargardesdearchivo(const std::string& filename);
+    bool guardarenelarchivo(const std::string& filename);
 
-    void setPosition(char c);
-    void step();
-    bool atNotch() const;
+    void ponerposicion(char c);
+    void siguienteposicionrotor();
+    bool girorotor() const;
 
-    char encrypt(char c) const;
-    char decrypt(char c) const;
+    char encriptar(char c) const;
+    char desencriptar(char c) const;
 
-    static bool validPermutation(const std::string& perm);
+    static bool permutacionvalida(const std::string& perm);
 };
 
 #endif

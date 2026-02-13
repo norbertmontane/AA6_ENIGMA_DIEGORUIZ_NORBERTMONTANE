@@ -7,12 +7,12 @@ Rotor::Rotor() {
     position = 0;
 }
 
-bool Rotor::loadFromFile(const std::string& filename) {
+bool Rotor::cargardesdearchivo(const std::string& filename) {
     std::ifstream file(filename);
     if (!file) return false;
 
     getline(file, wiring);
-    if (!validPermutation(wiring)) return false;
+    if (!permutacionvalida(wiring)) return false;
 
     if (file.peek() != EOF)
         file >> notch;
@@ -22,7 +22,7 @@ bool Rotor::loadFromFile(const std::string& filename) {
     return true;
 }
 
-bool Rotor::saveToFile(const std::string& filename) {
+bool Rotor::guardarenelarchivo(const std::string& filename) {
     std::ofstream file(filename);
     if (!file) return false;
 
@@ -31,7 +31,7 @@ bool Rotor::saveToFile(const std::string& filename) {
     return true;
 }
 
-bool Rotor::validPermutation(const std::string& perm) {
+bool Rotor::permutacionvalida(const std::string& perm) {
     if (perm.size() != 26) return false;
 
     bool used[26] = { false };
@@ -44,24 +44,24 @@ bool Rotor::validPermutation(const std::string& perm) {
     return true;
 }
 
-void Rotor::setPosition(char c) {
+void Rotor::ponerposicion(char c) {
     position = c - 'A';
 }
 
-void Rotor::step() {
+void Rotor::siguienteposicionrotor() {
     position = (position + 1) % 26;
 }
 
-bool Rotor::atNotch() const {
+bool Rotor::girorotor() const {
     return position == (notch - 'A');
 }
 
-char Rotor::encrypt(char c) const {
+char Rotor::encriptar(char c) const {
     int index = (c - 'A' + position) % 26;
     return wiring[index];
 }
 
-char Rotor::decrypt(char c) const {
+char Rotor::desencriptar(char c) const {
     int index = wiring.find(c);
     index = (index - position + 26) % 26;
     return char('A' + index);

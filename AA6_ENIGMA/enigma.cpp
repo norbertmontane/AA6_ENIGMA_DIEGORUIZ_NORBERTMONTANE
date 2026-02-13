@@ -1,37 +1,37 @@
 #include "Enigma.h"
 
 bool Enigma::loadRotors() {
-    return r1.loadFromFile("Rotor1.txt") &&
-        r2.loadFromFile("Rotor2.txt") &&
-        r3.loadFromFile("Rotor3.txt");
+    return r1.cargardesdearchivo("Rotor1.txt") &&
+        r2.cargardesdearchivo("Rotor2.txt") &&
+        r3.cargardesdearchivo("Rotor3.txt");
 }
 
 void Enigma::setPositions(char a, char b, char c) {
-    r1.setPosition(a);
-    r2.setPosition(b);
-    r3.setPosition(c);
+    r1.ponerposicion(a);
+    r2.ponerposicion(b);
+    r3.ponerposicion(c);
 }
 
 char Enigma::encryptChar(char c) {
-    r1.step();
-    if (r1.atNotch()) r2.step();
-    if (r2.atNotch()) r3.step();
+    r1.siguienteposicionrotor();
+    if (r1.girorotor()) r2.siguienteposicionrotor();
+    if (r2.girorotor()) r3.siguienteposicionrotor();
 
-    c = r1.encrypt(c);
-    c = r2.encrypt(c);
-    c = r3.encrypt(c);
+    c = r1.encriptar(c);
+    c = r2.encriptar(c);
+    c = r3.encriptar(c);
 
     return c;
 }
 
 char Enigma::decryptChar(char c) {
-    r1.step();
-    if (r1.atNotch()) r2.step();
-    if (r2.atNotch()) r3.step();
+    r1.siguienteposicionrotor();
+    if (r1.girorotor()) r2.siguienteposicionrotor();
+    if (r2.girorotor()) r3.siguienteposicionrotor();
 
-    c = r3.decrypt(c);
-    c = r2.decrypt(c);
-    c = r1.decrypt(c);
+    c = r3.desencriptar(c);
+    c = r2.desencriptar(c);
+    c = r1.desencriptar(c);
 
     return c;
 }

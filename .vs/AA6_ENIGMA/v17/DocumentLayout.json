@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE4AE10-6692-43F1-98F8-5BFB21C394C4}|AA6_ENIGMA\\AA6_ENIGMA.vcxproj|C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\AA6_ENIGMA\\rotor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEE4AE10-6692-43F1-98F8-5BFB21C394C4}|AA6_ENIGMA\\AA6_ENIGMA.vcxproj|solutionrelative:AA6_ENIGMA\\rotor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE4AE10-6692-43F1-98F8-5BFB21C394C4}|AA6_ENIGMA\\AA6_ENIGMA.vcxproj|C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\AA6_ENIGMA\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEE4AE10-6692-43F1-98F8-5BFB21C394C4}|AA6_ENIGMA\\AA6_ENIGMA.vcxproj|solutionrelative:AA6_ENIGMA\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "rotor.cpp",
+              "DocumentMoniker": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\AA6_ENIGMA\\rotor.cpp",
+              "RelativeDocumentMoniker": "AA6_ENIGMA\\rotor.cpp",
+              "ToolTip": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\AA6_ENIGMA\\rotor.cpp",
+              "RelativeToolTip": "AA6_ENIGMA\\rotor.cpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-13T08:28:15.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\AA6_ENIGMA\\main.cpp",
+              "RelativeDocumentMoniker": "AA6_ENIGMA\\main.cpp",
+              "ToolTip": "C:\\Users\\NorbertMontaneBonet\\Documents\\GitHub\\AA6_ENIGMA_DIEGORUIZ_NORBERTMONTANE\\AA6_ENIGMA\\main.cpp",
+              "RelativeToolTip": "AA6_ENIGMA\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-13T07:48:45.181Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
